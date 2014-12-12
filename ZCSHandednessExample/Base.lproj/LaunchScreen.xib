@@ -13,7 +13,7 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="EaD-eN-eaM">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ambig_hand" translatesAutoresizingMaskIntoConstraints="NO" id="yfg-Ke-vMu">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand" translatesAutoresizingMaskIntoConstraints="NO" id="yfg-Ke-vMu">
                     <rect key="frame" x="90" y="90" width="300" height="300"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="300" id="8Bo-xM-yND"/>
@@ -36,7 +36,7 @@
         </view>
     </objects>
     <resources>
-        <image name="ambig_hand" width="341" height="341"/>
         <image name="bg" width="341" height="341"/>
+        <image name="hand" width="341" height="341"/>
     </resources>
 </document>
