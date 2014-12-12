@@ -13,12 +13,21 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="EaD-eN-eaM">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ambig_hand" translatesAutoresizingMaskIntoConstraints="NO" id="yfg-Ke-vMu">
+                    <rect key="frame" x="90" y="90" width="300" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="8Bo-xM-yND"/>
+                        <constraint firstAttribute="width" constant="300" id="9Ka-yb-Dmb"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="EaD-eN-eaM" secondAttribute="bottom" id="7DV-Je-bgU"/>
+                <constraint firstAttribute="centerY" secondItem="yfg-Ke-vMu" secondAttribute="centerY" id="KYK-av-fay"/>
                 <constraint firstItem="EaD-eN-eaM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aff-HN-498"/>
                 <constraint firstAttribute="trailing" secondItem="EaD-eN-eaM" secondAttribute="trailing" id="jdy-ws-YHQ"/>
+                <constraint firstAttribute="centerX" secondItem="yfg-Ke-vMu" secondAttribute="centerX" id="uZG-d0-zmA"/>
                 <constraint firstItem="EaD-eN-eaM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zPC-TD-UM7"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
@@ -27,6 +36,7 @@
         </view>
     </objects>
     <resources>
+        <image name="ambig_hand" width="341" height="341"/>
         <image name="bg" width="341" height="341"/>
     </resources>
 </document>

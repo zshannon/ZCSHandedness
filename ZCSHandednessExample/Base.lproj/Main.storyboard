@@ -39,13 +39,13 @@
                             <constraint firstAttribute="centerX" secondItem="Hcr-c9-IGj" secondAttribute="centerX" id="2sp-51-KyG"/>
                             <constraint firstAttribute="centerXWithinMargins" secondItem="Hcr-c9-IGj" secondAttribute="trailing" priority="750" constant="134" id="5II-pd-8qX"/>
                             <constraint firstItem="kni-kZ-wYx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="A0J-ee-iIN"/>
+                            <constraint firstAttribute="centerY" secondItem="Hcr-c9-IGj" secondAttribute="centerY" constant="122" id="EMZ-x5-WPR"/>
                             <constraint firstItem="zIR-9A-kpb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="Lrh-ub-2du"/>
                             <constraint firstItem="Hcr-c9-IGj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" priority="750" constant="134" id="P5y-e7-3OK"/>
                             <constraint firstItem="kni-kZ-wYx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="PMk-U1-EE4"/>
                             <constraint firstItem="zIR-9A-kpb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="a1r-as-ChJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zIR-9A-kpb" secondAttribute="trailing" constant="-16" id="fXc-KQ-vau"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kni-kZ-wYx" secondAttribute="bottom" constant="20" id="fdM-4b-XXt"/>
-                            <constraint firstItem="Hcr-c9-IGj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ljW-RR-NUI"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zIR-9A-kpb" secondAttribute="bottom" id="xOU-ft-WaV"/>
                         </constraints>
                         <variation key="default">
