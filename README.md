@@ -3,6 +3,8 @@ ZCSHandedness
 
 Apps can be made better if you can make a prediction about which hand in holding the device.
 
+This is basically a toy at the moment. It's functional, but highly unsophisticated. Seeking pull requests.
+
 ## Add to your Podfile
 
 `pod 'ZCSHandedness', '~> 0.0.1'`
