@@ -14,6 +14,7 @@
 		11308D2C1A3AD61F008BCF71 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11308D2B1A3AD61F008BCF71 /* Images.xcassets */; };
 		11308D2F1A3AD61F008BCF71 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11308D2D1A3AD61F008BCF71 /* LaunchScreen.xib */; };
 		11308D3B1A3AD61F008BCF71 /* ZCSHandednessExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11308D3A1A3AD61F008BCF71 /* ZCSHandednessExampleTests.m */; };
+		11308D461A3AD645008BCF71 /* ZCSHandedness.m in Sources */ = {isa = PBXBuildFile; fileRef = 11308D451A3AD645008BCF71 /* ZCSHandedness.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		11308D341A3AD61F008BCF71 /* ZCSHandednessExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZCSHandednessExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11308D391A3AD61F008BCF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11308D3A1A3AD61F008BCF71 /* ZCSHandednessExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCSHandednessExampleTests.m; sourceTree = "<group>"; };
+		11308D441A3AD645008BCF71 /* ZCSHandedness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSHandedness.h; sourceTree = "<group>"; };
+		11308D451A3AD645008BCF71 /* ZCSHandedness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSHandedness.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 		11308D121A3AD61F008BCF71 = {
 			isa = PBXGroup;
 			children = (
+				11308D441A3AD645008BCF71 /* ZCSHandedness.h */,
+				11308D451A3AD645008BCF71 /* ZCSHandedness.m */,
 				11308D1D1A3AD61F008BCF71 /* ZCSHandednessExample */,
 				11308D371A3AD61F008BCF71 /* ZCSHandednessExampleTests */,
 				11308D1C1A3AD61F008BCF71 /* Products */,
@@ -222,6 +227,7 @@
 				11308D271A3AD61F008BCF71 /* ViewController.m in Sources */,
 				11308D241A3AD61F008BCF71 /* AppDelegate.m in Sources */,
 				11308D211A3AD61F008BCF71 /* main.m in Sources */,
+				11308D461A3AD645008BCF71 /* ZCSHandedness.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
