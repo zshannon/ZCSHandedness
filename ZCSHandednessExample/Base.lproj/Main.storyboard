@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,55 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="zIR-9A-kpb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ambiguous Hand" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kni-kZ-wYx">
+                                <rect key="frame" x="16" y="535" width="568" height="44.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ambig_hand" translatesAutoresizingMaskIntoConstraints="NO" id="Hcr-c9-IGj">
+                                <rect key="frame" x="150" y="28" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="QcF-3t-TYa"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Hcr-c9-IGj" secondAttribute="centerX" id="2sp-51-KyG"/>
+                            <constraint firstAttribute="centerXWithinMargins" secondItem="Hcr-c9-IGj" secondAttribute="trailing" priority="750" constant="134" id="5II-pd-8qX"/>
+                            <constraint firstItem="kni-kZ-wYx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="A0J-ee-iIN"/>
+                            <constraint firstItem="zIR-9A-kpb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="Lrh-ub-2du"/>
+                            <constraint firstItem="Hcr-c9-IGj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" priority="750" constant="134" id="P5y-e7-3OK"/>
+                            <constraint firstItem="kni-kZ-wYx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="PMk-U1-EE4"/>
+                            <constraint firstItem="zIR-9A-kpb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="a1r-as-ChJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zIR-9A-kpb" secondAttribute="trailing" constant="-16" id="fXc-KQ-vau"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kni-kZ-wYx" secondAttribute="bottom" constant="20" id="fdM-4b-XXt"/>
+                            <constraint firstItem="Hcr-c9-IGj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ljW-RR-NUI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zIR-9A-kpb" secondAttribute="bottom" id="xOU-ft-WaV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5II-pd-8qX"/>
+                                <exclude reference="P5y-e7-3OK"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Hcr-c9-IGj" id="38I-52-QCi"/>
+                        <outlet property="label" destination="kni-kZ-wYx" id="Iyc-aJ-2zn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="ambig_hand" width="341" height="341"/>
+        <image name="bg" width="341" height="341"/>
+    </resources>
 </document>
