@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+#define ZCSHandednessAmbiguousHandedness 0
+#define ZCSHandednessLeftHandedness 1
+#define ZCSHandednessRightHandedness 2
+
 @interface ZCSHandedness : NSObject
+
+extern NSString *const ZCSHandednessDidChangeNotification;
+extern NSString *const ZCSHandednessState;
+
+@property (nonatomic) int handedness;
+
++ (ZCSHandedness *)sharedHandedness;
 
 @end

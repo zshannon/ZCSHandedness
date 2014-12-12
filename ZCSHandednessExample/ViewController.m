@@ -17,21 +17,18 @@
 
 @implementation ViewController
 
-ZCSHandedness *handedness;
-
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	handedness = [ZCSHandedness sharedHandedness];
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handednessChanged:) name:HandednessChangeNotification object:handedness];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handednessChanged:) name:ZCSHandednessDidChangeNotification object:[ZCSHandedness sharedHandedness]];
 }
 
 - (void) handednessChanged:(NSNotification*) note {
-	switch (handedness.handedness) {
-		case LeftHandedness:
+	switch ([ZCSHandedness sharedHandedness].handedness) {
+		case ZCSHandednessLeftHandedness:
 			self.imageView.image = [UIImage imageNamed:@"left_hand"];
 			self.label.text = @"Left Hand";
 			break;
-		case RightHandedness:
+		case ZCSHandednessRightHandedness:
 			self.imageView.image = [UIImage imageNamed:@"right_hand"];
 			self.label.text = @"Right Hand";
 			break;
